@@ -23,7 +23,7 @@ RUN make linux_static && \
     cp ./rosetta/infra/run.sh /root/run.sh
 
 # Execution
-FROM ubuntu:latest
+FROM ubuntu:24.10
 
 RUN apt update -y && \
     apt install libgmp-dev libssl-dev -y && \
